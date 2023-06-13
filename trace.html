@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">  <head>    <title>Example</title>    <style>html, body, #map {width:100%;height: 100%; margin: 0; padding: 0;}</style>    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/markkr125/jsmaps/v0.0.15/library/native/core.native.css" />    <script src="https://cdn.rawgit.com/markkr125/jsmaps/v0.0.15/library/core.abstract.js" type="text/javascript">    </script>    <script src="https://cdn.rawgit.com/markkr125/jsmaps/v0.0.15/library/core.abstract-helper.js" type="text/javascript">    </script>    <script src="https://cdn.rawgit.com/markkr125/jsmaps/v0.0.15/library/core.js" type="text/javascript">    </script>    <script src="https://cdn.rawgit.com/markkr125/jsmaps/v0.0.15/library/native/core.native.js" type="text/javascript">    </script>    <script src="https://cdn.rawgit.com/markkr125/jsmaps/v0.0.15/library/native/core.native-ui.js" type="text/javascript">    </script>    <script src="https://cdn.rawgit.com/markkr125/jsmaps/v0.0.15/library/native/core.native-helper.js" type="text/javascript">    </script>    <script src="https://cdn.rawgit.com/markkr125/jsmaps/v0.0.15/library/native/core.native-marker.js" type="text/javascript">    </script>    <script src="https://cdn.rawgit.com/markkr125/jsmaps/v0.0.15/library/native/core.native-infoWindow.js" type="text/javascript">    </script>    <script src="https://cdn.rawgit.com/markkr125/jsmaps/v0.0.15/library/native/core.native-vector.js" type="text/javascript">    </script>  </head>  <body>    <script type='text/javascript'>    jsMaps.loader(function (){        var tiles = new jsMaps.Native.Tiles();tiles.addTileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png",['a','b','c'],'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.','OpenStreetMap');tiles.addTileLayer("http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png",['otile1','otile2','otile3','otile4'],'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>. Tiles courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="https://developer.mapquest.com/content/osm/mq_logo.png">','Map Quest');tiles.addTileLayer("http://{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg",['oatile1','oatile2','oatile3','oatile4'],'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>. Tiles courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="https://developer.mapquest.com/content/osm/mq_logo.png">','Map Quest Satellite',19);        var map = jsMaps.api.init(                '#map',                'native',                {                    center: {                        latitude: 48.852829922,                        longitude: 2.341831966                    },                    zoom: 12,                    mouse_scroll: true,                    zoom_control: true,                    map_type: true                },tiles        ); var polyLine0 = [{lat: 48.846849,lng: 2.316937},{lat: 48.850983,lng: 2.314430},{lat: 48.846849,lng: 2.316937},{lat: 48.850983,lng: 2.314430},{lat: 48.846849,lng: 2.316937},{lat: 48.846865,lng: 2.307269},{lat: 48.846849,lng: 2.316937},{lat: 48.846865,lng: 2.307269},{lat: 48.846849,lng: 2.316937},{lat: 48.844190,lng: 2.324441},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},{lat: 48.844783,lng: 2.328444},{lat: 48.848198,lng: 2.328022},        ];        jsMaps.api.polyLine(map,{            path: polyLine0,            strokeColor: '#FF0000',            strokeOpacity: 1.0,            strokeWeight: 4,        }); var polyLine1 = [{lat: 48.858870,lng: 2.348233},{lat: 48.855985,lng: 2.346503},{lat: 48.858870,lng: 2.348233},{lat: 48.855985,lng: 2.346503},{lat: 48.858870,lng: 2.348233},{lat: 48.855985,lng: 2.346503},{lat: 48.853900,lng: 2.344296},{lat: 48.852498,lng: 2.339080},{lat: 48.853145,lng: 2.335444},{lat: 48.851239,lng: 2.326415},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},{lat: 48.849001,lng: 2.321540},{lat: 48.847149,lng: 2.317237},        ];        jsMaps.api.polyLine(map,{            path: polyLine1,            strokeColor: '#0066FF',            strokeOpacity: 1.0,            strokeWeight: 4,        }); var polyLine2 = [{lat: 48.867858,lng: 2.364637},{lat: 48.870232,lng: 2.355102},{lat: 48.871177,lng: 2.349094},{lat: 48.872175,lng: 2.343495},{lat: 48.872606,lng: 2.340511},{lat: 48.871321,lng: 2.332855},{lat: 48.870107,lng: 2.325280},{lat: 48.866278,lng: 2.321794},{lat: 48.861693,lng: 2.315243},{lat: 48.856993,lng: 2.315354},{lat: 48.851583,lng: 2.315030},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},{lat: 48.849301,lng: 2.321840},{lat: 48.847449,lng: 2.317537},        ];        jsMaps.api.polyLine(map,{            path: polyLine2,            strokeColor: '#00FF00',            strokeOpacity: 1.0,            strokeWeight: 4,        });    });</script><div id='map'></div></body></html><table><tr><th>voleur</th><th>gendarme</th><th>gendarme</th></tr>
+<tr><td>Duroc</td><td>Châtelet</td><td>République</td></tr>
+<tr><td>Saint-Francois-Xavier</td><td>Cité</td><td>Strasbourg-Saint-Denis</td></tr>
+<tr><td>Duroc</td><td>Châtelet</td><td>Bonne Nouvelle</td></tr>
+<tr><td>Saint-Francois-Xavier</td><td>Cité</td><td>Grands Boulevards</td></tr>
+<tr><td>Duroc</td><td>Châtelet</td><td>Richelieu-Drouot</td></tr>
+<tr><td>Ségur</td><td>Cité</td><td>Opéra</td></tr>
+<tr><td>Duroc</td><td>Saint-Michel</td><td>Madeleine</td></tr>
+<tr><td>Ségur</td><td>Odéon</td><td>Concorde</td></tr>
+<tr><td>Duroc</td><td>Mabillon</td><td>Invalides</td></tr>
+<tr><td>Montparnasse-Bienvenue</td><td>Sèvres-Babylone</td><td>Varenne</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Saint-Francois-Xavier</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+<tr><td>Notre-Dame des Champs</td><td>Vaneau</td><td>Vaneau</td></tr>
+<tr><td>Rennes</td><td>Duroc</td><td>Duroc</td></tr>
+</table>
